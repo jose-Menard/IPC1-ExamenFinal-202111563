@@ -73,8 +73,27 @@ public class ExamenFinal {
            
                     
                     System.out.println("Problema 2");
-
-
+                    int filas;
+                    Scanner abajo=new Scanner (System.in);
+                    System.out.println("Favor ingresar la cantidad de asteríscos inferiores (IMPAR)");
+                    filas=abajo.nextInt();
+             
+                    
+                                       
+                    if(filas % 2== 0){
+                    System.out.println("debe ingresar un número impar, vuelvalo a intentar");            
+                    }else{
+                    System.out.println(); 
+                    for (int i=0; i<filas; i++){
+                        for (int e=filas-i; e>1; e--){
+                            System.out.print(" ");      
+                        }
+                        for (int e=0; e<=i; e++){
+                            System.out.print("* ");   
+                        }
+                        System.out.println();
+                    }        
+                    }
                     System.out.println("");
                     System.out.println("");
                     System.out.println("");
